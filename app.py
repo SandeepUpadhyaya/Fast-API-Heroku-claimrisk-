@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 import uvicorn
 import joblib
+import pandas as pd
+import numpy as np
 
 
 app = FastAPI(debug=True)
