@@ -1,5 +1,5 @@
-from fastapi import FastAPI
 import uvicorn
+from fastapi import FastAPI
 import joblib
 import pandas as pd
 import numpy as np
@@ -33,4 +33,4 @@ def predict(PREMIUM_CHARGED:float, NO_CLAIM_DISCOUNT:float, SPECIAL_DISCOUNT:flo
     
     
 if __name__ =='__main__':
-    uvicorn.run(app)
+    uvicorn.run("app:app",port=8000,reload=True)
